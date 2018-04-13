@@ -1,0 +1,29 @@
+{
+  "name": "termipipe",
+  "version": "1.0.0",
+  "description": "Pipes terminal to another place. Good for piping Visual Studio Code terminals to other Windows.",
+  "main": "app.js",
+  "scripts": {
+    "watch": "tsc -w --project ./src/tsconfig.json",
+    "run": "nodemon ./lib/runner.js --delay .5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jakkaj/termipipe.git"
+  },
+  "author": "jakkaj",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jakkaj/termipipe/issues"
+  },
+  "homepage": "https://github.com/jakkaj/termipipe#readme",
+  "devDependencies": {
+    "@types/node": "^9.6.5",
+    "nodemon": "^1.17.3",
+    "typescript": "^2.8.1"
+  },
+  "dependencies": {
+    "intercept-stdout": "^0.1.2",
+    "pipe-args": "^1.3.0"
+  }
+}
